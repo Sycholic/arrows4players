@@ -1,0 +1,8 @@
+name: Arrows4Players 
+version: 1.1
+description: Arrows from any source can be picked up to be reused now. Oh yeah..
+author: Sycholic
+website: https://www.facebook.com/sycholic
+main: com.sycholic.arrows4players.PoachArrows
+database: false
+
