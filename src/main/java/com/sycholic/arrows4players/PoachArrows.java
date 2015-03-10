@@ -29,7 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.sycholic.arrows4players;
 
-import org.bukkit.craftbukkit.v1_8_R1.entity.CraftArrow;
+import org.bukkit.craftbukkit.v1_8_R2.entity.CraftArrow;
 import org.bukkit.plugin.java.JavaPlugin; 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
