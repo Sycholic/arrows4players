@@ -11,7 +11,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of [project] nor the names of its
+* Neither the name of Arrows4Players nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
@@ -29,8 +29,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.sycholic.arrows4players;
 
-import static net.minecraft.server.v1_9_R1.EntityArrow.PickupStatus.ALLOWED;
-import org.bukkit.craftbukkit.v1_9_R1.entity.CraftArrow;
+import static net.minecraft.server.v1_10_R1.EntityArrow.PickupStatus.ALLOWED;
+import org.bukkit.craftbukkit.v1_10_R1.entity.CraftArrow;
 import org.bukkit.plugin.java.JavaPlugin; 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
