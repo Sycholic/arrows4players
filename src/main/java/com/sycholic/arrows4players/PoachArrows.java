@@ -29,13 +29,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.sycholic.arrows4players;
 
-import static net.minecraft.server.v1_14_R1.EntityArrow.PickupStatus.ALLOWED;
-import org.bukkit.craftbukkit.v1_14_R1.entity.CraftArrow;
-import org.bukkit.plugin.java.JavaPlugin; 
+import static net.minecraft.server.v1_15_R1.EntityArrow.PickupStatus.ALLOWED;
+import org.bukkit.craftbukkit.v1_15_R1.entity.CraftArrow;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.ProjectileHitEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  *
