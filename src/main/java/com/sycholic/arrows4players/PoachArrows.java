@@ -29,7 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.sycholic.arrows4players;
 
-import org.bukkit.craftbukkit.v1_18_R1.entity.CraftTippedArrow;
+import org.bukkit.craftbukkit.v1_18_R2.entity.CraftTippedArrow;
 import static org.bukkit.entity.AbstractArrow.PickupStatus.ALLOWED;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -51,8 +51,8 @@ public class PoachArrows extends JavaPlugin implements Listener {
     
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void onHit(ProjectileHitEvent e) {
-        if(e.getEntity() instanceof CraftTippedArrow){
+        if (e.getEntity() instanceof CraftTippedArrow){
             ((CraftTippedArrow) e.getEntity()).setPickupStatus(ALLOWED);
-            }
-            }
         }
+    }
+}
