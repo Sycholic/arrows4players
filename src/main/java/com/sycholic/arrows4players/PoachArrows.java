@@ -29,8 +29,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.sycholic.arrows4players;
 
-import org.bukkit.craftbukkit.v1_20_R3.entity.CraftTippedArrow;
-import static org.bukkit.entity.AbstractArrow.PickupStatus.ALLOWED;
+// import org.bukkit.craftbukkit.v1_20_R3.entity.CraftTippedArrow; // Old way
+import org.bukkit.entity.AbstractArrow;  // New way
+import static org.bukkit.entity.AbstractArrow.PickupStatus.ALLOWED; // Might still be needed?
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -51,8 +52,8 @@ public class PoachArrows extends JavaPlugin implements Listener {
     
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void onHit(ProjectileHitEvent e) {
-        if (e.getEntity() instanceof CraftTippedArrow){
-            ((CraftTippedArrow) e.getEntity()).setPickupStatus(ALLOWED);
+        if (e.getEntity() instanceof AbstractArrow arrow) {
+            arrow.setPickupStatus(AbstractArrow.PickupStatus.ALLOWED);
         }
     }
 }
